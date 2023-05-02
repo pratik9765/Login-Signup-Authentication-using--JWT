@@ -4,6 +4,8 @@ const app = express();
 require('dotenv').config();
 const PORT = 3000;
 
+// cookie parser?  whist is this and why we need this
+
 app.use(express.json());
 
 require("./config/database").connect(); 
