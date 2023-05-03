@@ -5,6 +5,8 @@ require('dotenv').config();
 const PORT = 3000;
 
 // cookie parser?  whist is this and why we need this
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
 
 app.use(express.json());
 
